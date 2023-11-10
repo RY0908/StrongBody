@@ -25,13 +25,13 @@ function Header() {
         >
           <button
             type="button"
-            class="text-white border-2 border-transparent bg-secondary-color hover:bg-transparent hover:border-secondary-color hover:text-secondary-color font-medium rounded-full text-sm px-10 py-2.5 text-center mr-2 mb-2 dark:focus:ring-secondary-color transition-all active:px-12"
+            class="text-white border-2 border-transparent bg-secondary-color hover:bg-secondary-color/5 hover:border-secondary-color hover:text-secondary-color font-medium rounded-full text-sm px-10 py-2.5 text-center mr-2 mb-2 focus:ring-secondary-color transition-all active:px-12"
           >
             Join Us
           </button>
           <button
             type="button"
-            class="text-secondary-color hover:text-white border border-secondary-color hover:bg-secondary-color font-medium rounded-full text-sm px-10 py-2.5 text-center mr-2 mb-2 dark:border-sering-secondary-color dark:text-sering-secondary-color dark:hover:text-white dark:hover:bg-secondary-color dark:focus:ring-secondary-color active:px-12 transition-all"
+            class="text-secondary-color hover:text-white border border-secondary-color hover:bg-secondary-color/5 font-medium rounded-full text-sm px-10 py-2.5 text-center mr-2 mb-2 border-sering-secondary-color text-sering-secondary-colo focus:ring-secondary-color active:px-12 transition-all"
           >
             Sign In
           </button>

@@ -11,13 +11,13 @@ function Pricing() {
       <div className="flex justify-between items-center my-5 p-8 gap-8 overflow-auto">
         <div className="flex flex-col justify-center items-center text-white text-center bg-backroundPricingCard bg-cover rounded-xl mx-auto min-w-fit  ease-in-out duration-300 delay-100 hover:p-5    ">
           <div className="flex flex-col justify-center items-center p-5 gap-5  rounded-t-2xl">
-            <h2 className="text-xl font-bold text-stone-600">Basic Plan</h2>
+            <h2 className="text-xl font-bold text-stone-600">Tarif Etudiant</h2>
             <p className="text-md font-extralight max-w-[20rem]">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Perspiciatis fuga facilis ape
             </p>
             <h1 className="text-3xl font-extrabold">
-              25$ <span className="text-sm font-light">/m </span>
+              4000da <span className="text-sm font-light">/m </span>
             </h1>
           </div>
           <svg
@@ -34,11 +34,10 @@ function Pricing() {
           </svg>
           <div className="bg-gray-100 w-full flex flex-col items-center justify-center gap-5 p-4 text-black rounded-b-xl ">
             <ul className="flex flex-col gap-5">
-              <li>unlimited access </li>
-              <li>unlimited access </li>
-              <li>unlimited access </li>
-              <li>unlimited access </li>
-              <li>unlimited access </li>
+              <li>7 Jours/7 </li>
+              <li>Espace Musculation</li>
+              <li>Espace Cardio </li>
+              <li>Coaching dispo</li>
             </ul>
             <button className="rounded-3xl bg-secondary-color px-8 py-2 ">
               Choose Plan
@@ -47,13 +46,13 @@ function Pricing() {
         </div>
         <div className="flex flex-col justify-center items-center text-white text-center bg-backroundPricingCard bg-cover rounded-xl mx-auto min-w-fit  ease-in-out duration-300 delay-100 hover:p-5   ">
           <div className="flex flex-col justify-center items-center p-5 gap-5  rounded-t-2xl">
-            <h2 className="text-xl font-bold text-stone-600">Basic Plan</h2>
-            <p className="text-md font-extralight w-80 ">
+            <h2 className="text-xl font-bold text-stone-600">Muscu</h2>
+            <p className="text-md font-extralight max-w-[20rem] ">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Perspiciatis fuga facilis ape
             </p>
             <h1 className="text-3xl font-extrabold">
-              25$ <span className="text-sm font-light">/m </span>
+              5000da <span className="text-sm font-light">/m </span>
             </h1>
           </div>
           <svg
@@ -70,11 +69,10 @@ function Pricing() {
           </svg>
           <div className="bg-gray-100 w-full flex flex-col items-center justify-center gap-5 p-4 text-black rounded-b-xl ">
             <ul className="flex flex-col gap-5">
-              <li>unlimited access </li>
-              <li>unlimited access </li>
-              <li>unlimited access </li>
-              <li>unlimited access </li>
-              <li>unlimited access </li>
+              <li>7 Jours/7 </li>
+              <li>Espace Musculation</li>
+              <li>Programme offert </li>
+              <li>Coaching dispo</li>
             </ul>
             <button className="rounded-3xl bg-secondary-color px-8 py-2">
               Choose Plan
@@ -83,13 +81,15 @@ function Pricing() {
         </div>
         <div className="flex flex-col justify-center items-center text-white text-center bg-backroundPricingCard bg-cover rounded-xl mx-auto min-w-fit  ease-in-out duration-300 delay-100 hover:p-5   ">
           <div className="flex flex-col justify-center items-center p-5 gap-5  rounded-t-2xl">
-            <h2 className="text-xl font-bold text-stone-600">Basic Plan</h2>
-            <p className="text-md font-extralight w-80 ">
+            <h2 className="text-xl font-bold text-stone-600">
+              Muscu/Cardio Illimite
+            </h2>
+            <p className="text-md font-extralight max-w-[20rem] ">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Perspiciatis fuga facilis ape
             </p>
             <h1 className="text-3xl font-extrabold">
-              25$ <span className="text-sm font-light">/m </span>
+              6000da <span className="text-sm font-light">/m </span>
             </h1>
           </div>
           <svg
@@ -107,10 +107,9 @@ function Pricing() {
           <div className="bg-gray-100 w-full flex flex-col items-center justify-center gap-5 p-4 text-black rounded-b-xl ">
             <ul className="flex flex-col gap-5">
               <li>unlimited access </li>
-              <li>unlimited access </li>
-              <li>unlimited access </li>
-              <li>unlimited access </li>
-              <li>unlimited access </li>
+              <li>Espace Musculation</li>
+              <li>Espace Cardio </li>
+              <li>Coaching dispo</li>
             </ul>
             <button className="rounded-3xl bg-secondary-color px-8 py-2">
               Choose Plan

@@ -1,23 +1,30 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import Logo from "../Assets/reshot-icon-gym-dumbbell-WS79HTVFXE.svg";
 
 function NavBar() {
   var [switchhidden, setSwitchhidden] = useState("hidden");
-  var handleClick = () => {
-    setSwitchhidden(switchhidden === "" ? "hidden" : "");
-  };
+  const menu = useRef(null);
+  const menubtn = useRef(null);
+  document.addEventListener("click", function (event) {
+    const outsideClick = !menu.current.contains(event.target);
+    const notbtn = !menubtn.current.contains(event.target);
+    if (notbtn) {
+      outsideClick ? setSwitchhidden("hidden") : setSwitchhidden("");
+    }
+  });
   return (
     <nav className="bg-main-color/80 backdrop-blur z-50 fixed top-0 w-full ">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-4 max-xl:px-10 ">
         <a className="flex items-center">
           <img src={Logo} className="h-8 mr-3" alt="" />
           <span className="self-center text-2xl font-semibold font-lexend whitespace-nowrap text-white">
-            FH
+            StrongBody
           </span>
         </a>
         <button
+          ref={menubtn}
           onClick={() => {
-            handleClick();
+            setSwitchhidden(switchhidden === "" ? "hidden" : "");
           }}
           className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden  focus:outline-none focus:ring-2   hover:bg-gray-700 focus:ring-gray-600"
         >
@@ -38,7 +45,10 @@ function NavBar() {
             />
           </svg>
         </button>
-        <div className={` ${switchhidden} w-full lg:block lg:w-auto  `}>
+        <div
+          ref={menu}
+          className={` ${switchhidden} w-full lg:block lg:w-auto  `}
+        >
           <ul className="font-medium flex flex-col items-center justify-center p-4 lg:p-0 mt-4 border border-gray-100 rounded-lg bg-transparent lg:flex-row lg:space-x-12 lg:mt-0 lg:border-0 ">
             <li>
               <a className="block py-2 pl-3 font-lexend transition-all pr-4  rounded lg:bg-transparent lg:p-0 text-secondary-color">
@@ -67,7 +77,7 @@ function NavBar() {
             </li>
             <li>
               {" "}
-              <button className="bg-black rounded-full px-5 py-2 hover:bg-secondary-color hover:opacity-90 text-white transition-all">
+              <button className="bg-transparent border border-secondary-color rounded-full px-5 py-2 hover:bg-secondary-color hover:opacity-90 text-white transition-all">
                 Login/Register
               </button>
             </li>
