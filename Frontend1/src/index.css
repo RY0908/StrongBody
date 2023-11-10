@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Exa&family=Poppins:wght@100;200;300;400;500;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&family=Rubik:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600&family=Work+Sans:wght@300&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: rgba(22, 22, 22, 1);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.mask-style {
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 30%,
+    white 70%,
+    transparent
+  );
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+.scroll {
+  animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 1rem));
+  }
+}
+
+.slide-in-anim {
+  transform: translateY(-200%);
+  opacity: 0;
+  animation: slide-in-anim 1.5s ease-out forwards;
+}
+@keyframes slide-in-anim {
+  20% {
+    opacity: 0;
+  }
+  60% {
+    transform: translateY(-45%);
+  }
+  75% {
+    transform: translateY(-52%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-50%);
+  }
+}
+
+/****************************contact********/
+.contact-container {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: black;
+}
+.contact-content {
+  display: flex;
+  gap: 5%;
+}
+.contact-info-container {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+.contact-info {
+  display: flex;
+  align-items: center;
+  padding: 30px 25px;
+  border: 1px solid #383b4b;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  transition: all 0.4s;
+}
+.contact-info:hover {
+  border: #f4ce14 solid 1px;
+  background-color: #282c3e;
+}
+.info-title {
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  border-radius: 24px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+.info {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #fbf4e0;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+  max-width: 80%;
+}
+.contact-info-icon img {
+  width: 70px;
+}
+.contact-info-text {
+  flex: 1;
+}
+.form-container {
+  width: 60%;
+}
+.form-grp {
+  margin-bottom: 35px;
+}
+.form-inpt {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #383b4b;
+  border-radius: 4px;
+  outline: none;
+  box-shadow: none;
+  height: 30px;
+  padding: 12px;
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  line-height: 1.5;
+  transition: border-color 0.15s;
+}
+.form-inpt:hover {
+  border: #f4ce14 solid 1px;
+}
+
+.message {
+  height: 90px;
+}
+.form-btn {
+  font-family: Arial, Helvetica, sans-serif;
+  min-width: 155px;
+  color: #fff;
+  padding: 14px 0;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  background-color: #f4ce14;
+  border: 1px solid #f4ce14;
+  border-radius: 10px;
+  transition: all 0.4s;
+  padding: 15px 10px 15px 10px;
+}
+.form-btn:hover {
+  background-color: transparent;
+  color: #f4ce14;
+}
+
+.title-container {
+  text-align: left;
+  margin-bottom: 30px;
+}
+.title {
+  position: relative;
+  display: inline-block;
+  color: #fbf4e0;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1;
+  letter-spacing: 0.4px;
+  text-transform: capitalize;
+  padding-bottom: 13px;
+}
+.title-comment {
+  color: #f4ce14;
+  font-weight: 600;
+  letter-spacing: 0.7px;
+  font-size: 22px;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+.title > span {
+  background-color: #f4ce14;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 65px;
+  height: 2px;
+}
+@media (max-width: 800px) {
+  .contact-content {
+    flex-direction: column;
+  }
+  .contact-info-container {
+    flex-direction: column;
+    width: 100%;
+  }
+  .form-container {
+    width: 100%;
+  }
+  .form-btn {
+    margin-inline: auto;
+  }
+}
