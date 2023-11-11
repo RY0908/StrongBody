@@ -60,7 +60,10 @@ function Services() {
   }, [isIntersecting2]);
 
   return (
-    <div className="bg-gradient-to-t from-main-color to-black py-10 px-8 flex justify-center items-center gap-5 lg:gap-16 overflow-hidden">
+    <div
+      id="services"
+      className="bg-gradient-to-t from-main-color to-black py-10 px-8 flex justify-center items-center gap-5 lg:gap-16 overflow-hidden"
+    >
       <div ref={ref} className="grid grid-cols-1 grid-rows-4 ">
         <img
           className="aspect-auto w-[15em] transition-all duration-1500"

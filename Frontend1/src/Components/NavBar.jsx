@@ -51,32 +51,46 @@ function NavBar() {
         >
           <ul className="font-medium flex flex-col items-center justify-center p-4 lg:p-0 mt-4 border border-gray-100 rounded-lg bg-transparent lg:flex-row lg:space-x-12 lg:mt-0 lg:border-0 ">
             <li>
-              <a className="block py-2 pl-3 font-lexend transition-all pr-4  rounded lg:bg-transparent lg:p-0 text-secondary-color">
+              <a
+                href="#home"
+                className="block py-2 pl-3 font-lexend transition-all pr-4  rounded lg:bg-transparent lg:p-0 text-secondary-color"
+              >
                 Home
               </a>
             </li>
             <li>
-              <a className="block py-2 pl-3 font-lexend transition-all pr-4  rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-secondary-color lg:p-0 text-white hover:text-secondary-color">
+              <a
+                href="#about"
+                className="block py-2 pl-3 font-lexend transition-all pr-4  rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-secondary-color lg:p-0 text-white hover:text-secondary-color"
+              >
                 About
               </a>
             </li>
             <li>
-              <a className="block py-2 pl-3 font-lexend transition-all pr-4  rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-secondary-color lg:p-0 text-white hover:text-secondary-color">
+              <a
+                href="#services"
+                className="block py-2 pl-3 font-lexend transition-all pr-4  rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-secondary-color lg:p-0 text-white hover:text-secondary-color"
+              >
                 Services
               </a>
             </li>
             <li>
-              <a className="block py-2 pl-3 font-lexend transition-all pr-4  rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-secondary-color lg:p-0 text-white hover:text-secondary-color">
+              <a
+                href="#pricing"
+                className="block py-2 pl-3 font-lexend transition-all pr-4  rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-secondary-color lg:p-0 text-white hover:text-secondary-color"
+              >
                 Pricing
               </a>
             </li>
             <li>
-              <a className="block py-2 pl-3 font-lexend transition-all pr-4  rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-secondary-color lg:p-0 text-white hover:text-secondary-color">
+              <a
+                href="#contact"
+                className="block py-2 pl-3 font-lexend transition-all pr-4  rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-secondary-color lg:p-0 text-white hover:text-secondary-color"
+              >
                 Contact
               </a>
             </li>
             <li>
-              {" "}
               <button className="bg-transparent border border-secondary-color rounded-full px-5 py-2 hover:bg-secondary-color hover:opacity-90 text-white transition-all">
                 Login/Register
               </button>

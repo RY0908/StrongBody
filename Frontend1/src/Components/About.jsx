@@ -31,6 +31,7 @@ function About() {
   }, [isIntersecting]);
   return (
     <div
+      id="about"
       ref={ref}
       className="md:px-32 lg:bg-backroundAbout bg-black bg-cover bg-center px-6 py-28 flex flex-col items-center text-center md:text-left md:items-start  gap-16"
     >

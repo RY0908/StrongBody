@@ -12,7 +12,6 @@ function App() {
       <About></About>
       <Services></Services>
       <Pricing></Pricing>
-
       <AutoScroller></AutoScroller>
       <Contact></Contact>
     </>

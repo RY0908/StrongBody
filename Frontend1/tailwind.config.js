@@ -17,9 +17,12 @@ export default {
         3000: "3000ms",
       },
       backgroundImage: {
-        backroundhomesm: "url('./src/Assets/pxfuel (1).jpg')",
-        backroundPricingCard: "url('./src/Assets/liquid-cheese.svg')",
-        backroundAbout: "url('./src/Assets/1682963929882.jpg')",
+        backroundhomesm:
+          "url('https://res.cloudinary.com/dwucsx9ot/image/upload/v1699698294/Strongbody/cludrnkbporkcbqax9bs.jpg')",
+        backroundPricingCard:
+          "url('https://res.cloudinary.com/dwucsx9ot/image/upload/v1699698387/Strongbody/fkc9lc9wfrnp8viqgzhf.svg')",
+        backroundAbout:
+          "url('https://res.cloudinary.com/dwucsx9ot/image/upload/v1699698331/Strongbody/fggeq943di1tjshb68mq.jpg')",
       },
       screens: {
         xs: "400px",

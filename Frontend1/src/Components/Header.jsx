@@ -1,10 +1,9 @@
 import React from "react";
-import Image from "../Assets/cut img.png";
 function Header() {
   return (
     <div className=" lg:mt-36 h-full  bg-center bg-cover max-lg:bg-backroundhomesm ">
       <div className=" bg-main-color/80 flex flex-col justify-start h-full lg:mt-0 max-lg:pt-32  lg:items-start items-center lg:bg-main-color lg:text-left text-center  lg:gap-3 max-xs:gap-2 gap-7  lg:w-[50vw]   lg:pl-20 p-5 lg:shadow-[0px_10px_80px_80px_#161616] ">
-        <div className="slide-in-anim">
+        <div className="slide-in-anim mt-5">
           <h1 className="md:text-5xl text-4xl font-Roboto font-medium">
             <span className="text-secondary-color">BE</span> STRONGER
           </h1>
@@ -63,7 +62,11 @@ function Header() {
         className="opacity-0 lg:opacity-50 -z-10  lg:absolute lg:top-0 lg:right-0 lg:w-[65vw]  lg:mt-14
       "
       >
-        <img src={Image} alt="" className="" />
+        <img
+          src="https://res.cloudinary.com/dwucsx9ot/image/upload/v1699698310/Strongbody/rdx6rbheg7bk8pntgp52.png"
+          alt=""
+          className=""
+        />
       </div>
     </div>
   );
