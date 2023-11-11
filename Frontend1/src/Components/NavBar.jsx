@@ -1,5 +1,4 @@
 import { useRef, useState } from "react";
-import Logo from "../Assets/reshot-icon-gym-dumbbell-WS79HTVFXE.svg";
 
 function NavBar() {
   var [switchhidden, setSwitchhidden] = useState("hidden");
@@ -16,7 +15,11 @@ function NavBar() {
     <nav className="bg-main-color/80 backdrop-blur z-50 fixed top-0 w-full ">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-4 max-xl:px-10 ">
         <a className="flex items-center">
-          <img src={Logo} className="h-8 mr-3" alt="" />
+          <img
+            src="https://res.cloudinary.com/dwucsx9ot/image/upload/v1699699603/Strongbody/zldl8z3oeyjdjogetxck.svg"
+            className="h-8 mr-3"
+            alt=""
+          />
           <span className="self-center text-2xl font-semibold font-lexend whitespace-nowrap text-white">
             StrongBody
           </span>
