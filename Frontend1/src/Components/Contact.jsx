@@ -8,7 +8,7 @@ function Contact() {
           <div className="title-container">
             <p className="title-comment">Get In Touch</p>
             <p className="title">
-              Contact Me
+              Contact Us
               <span></span>
             </p>
           </div>

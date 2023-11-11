@@ -7,6 +7,9 @@ export default {
   ],
   theme: {
     extend: {
+      spacing: {
+        m60: "-15rem",
+      },
       transitionDuration: {
         1500: "1500ms",
         2000: "2000ms",
@@ -28,6 +31,7 @@ export default {
         Poppins: ["Poppins"],
         Raleway: ["Raleway"],
         Rubik: ["Rubik"],
+        bebas: ["Bebas Neue"],
       },
       colors: {
         transparent: "transparent",
